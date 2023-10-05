@@ -17,7 +17,7 @@ export const proyectData = [
       },
       {
         icon: (
-          <a href="https://vinils-trade-client.vercel.app" target="_blank" rel="noopener noreferrer">
+          <a href="" target="_blank" rel="noopener noreferrer">
             <SiVercel size="40" />
           </a>
         )
@@ -99,14 +99,14 @@ export const proyectData = [
       deploy: [
         {
           icon: (
-            <a href="https://github.com/Mjeremias03" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Mjeremias03/PortfolioJere" target="_blank" rel="noopener noreferrer">
               <SiGithub size="40" />
             </a>
           )
         },
         {
           icon: (
-            <a href="https://vinils-trade-client.vercel.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://portfoliojere-doa889urt-mjeremias03.vercel.app/" target="_blank" rel="noopener noreferrer">
               <SiVercel size="40" />
             </a>
           )

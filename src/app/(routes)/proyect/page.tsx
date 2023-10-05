@@ -4,7 +4,7 @@ import { Proyect} from "@/components/Proyect";
 
 export default function WorksPage() {
     return (
-        <div className="h-screen">
+        <div>
             <Transition />
             <Proyect />
         </div>
