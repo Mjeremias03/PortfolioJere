@@ -48,7 +48,7 @@ export const proyectData = [
     id: 1,
     title: "E-commers",
     description:
-    "El proyecto 'E-commerce React de Vinilos' es una pagina de comercio electrónico diseñada para amantes de la música y coleccionistas de vinilos. Esta aplicación web ofrece una experiencia única para explorar, buscar y adquirir una amplia variedad de discos de vinilo, desde clásicos atemporales hasta las últimas",
+    "El proyecto 'E-commerce React de Vinilos' es una pagina de comercio electrónico diseñada para amantes de la música y coleccionistas de vinilos. Esta aplicación web ofrece una experiencia única para explorar, buscar y adquirir una amplia variedad de discos de vinilo, desde clásicos atemporales hasta las últimas decadas.",
       img: "/Vinyls.png",
       deploy: [
         {

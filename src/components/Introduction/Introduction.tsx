@@ -32,7 +32,7 @@ export function Introduction() {
             <div className="flex justify-center items-center flex-col">
               <h1 className="mb-5 text-5xl font-bold text-center md:mb-10">
                 Jeremias Mingolla <br />
-                <span className="text-blue-400 block text-center text-3xl md:text-4xl">
+                <span className="text-blue-400 block text-center text-3xl mt-2 md:text-4xl">
                   Desarrollador Web FrontEnd
                 </span>
               </h1>
@@ -48,7 +48,7 @@ export function Introduction() {
                 </a>
                 <a
                   href="/Cv Jeremias.pdf"
-                  className="px-6 py-3 my-2 items-center transition-all border-2 cursor-pointer text-blue-200 border-blue-300 rounded-xl hover:shadow-xl hover:shadow-blue-300"
+                  className="px-6 py-3 my-2 items-center transition-all border-2 cursor-pointer text-blue-200 border-blue-400 rounded-xl hover:shadow-xl hover:shadow-blue-300"
                   download
                 >
                   Descarga mi cv
