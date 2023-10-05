@@ -31,8 +31,8 @@ export function Proyect() {
       <div className="flex justify-center group cursor-pointer items-center relative">
         <img src={img} alt={title} className="lg:w-full md:w-full w-96" />
         <div className="absolute inset-0 flex justify-center items-center gap-3 mx-auto bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-          {deploy.map(({ icon, href }, index) => (
-            <a key={index} href={href} target="_blank" rel="noopener noreferrer">
+          {deploy.map(({ icon }, index) => (
+            <a key={index}  target="_blank" rel="noopener noreferrer">
               {icon}
             </a>
           ))}

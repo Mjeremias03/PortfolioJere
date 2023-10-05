@@ -17,7 +17,7 @@ export const proyectData = [
       },
       {
         icon: (
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://vinils-trade-client.vercel.app" target="_blank" rel="noopener noreferrer">
             <SiVercel size="40" />
           </a>
         )
@@ -106,7 +106,7 @@ export const proyectData = [
         },
         {
           icon: (
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://vinils-trade-client.vercel.app" target="_blank" rel="noopener noreferrer">
               <SiVercel size="40" />
             </a>
           )
