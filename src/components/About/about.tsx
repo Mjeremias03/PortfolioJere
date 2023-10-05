@@ -29,8 +29,8 @@ export default function About() {
           las últimas tendencias en desarrollo web.
         </p>
       </div>
-      <div className=" h-auto flex mx-auto justify-center items-center w-[40%] md:mt-44">
-        <Image src="/remove.png" alt="remove" width={600} height={600} />
+      <div className=" h-full flex mx-auto justify-center items-center w-[40%] ">
+        <Image src="/remove.png" className="" alt="remove" width={600} height={600} />
       </div>
       <div className="text-white h-full flex justify-center mr-12 items-center flex-col md:w-[20%]">
         <h1 className="font-black text-center text-7xl mb-4 ">Skills</h1>
