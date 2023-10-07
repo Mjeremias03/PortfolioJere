@@ -5,10 +5,9 @@ import { proyectData } from "./Proyect.data"
 export function Proyect() {
     
     return (
-        <div className="h-screen bg-gradient-to-b from-blue-200 via-blue-300 to-blue-500 ">
-            <div className="grid w-full bg-gradient-to-b from-blue-200 via-blue-300 to-blue-500 pb-32 md:min-h-screen   mt-28 md:mt-0 place-items-center">
-                <div className="mt-36">
-                    <div className="h-52 lg:h-12 flex  justify-center items-end ">
+        <div className="min-h-screen flex w-full justify-center items-center ">
+            <div className="grid w-full  pb-32 md:min-h-screen   mt-28 md:mt-0 place-items-center">
+                <div className="sm:mt-52 mt-20">
                     <motion.h1
                         variants={fadeIn('left', 0.5)}
                         initial="hidden"
@@ -17,7 +16,6 @@ export function Proyect() {
                         className=" text-2xl font-bold text-center md:text-4-xl"
                     >Mis últimos  <span className="font-bold text-blue-500">trabajos realizados.</span>
                     </motion.h1>
-                    </div>
                     <motion.div
                         className="flex flex-col justify-center items-center w-full h-full gap-5 px-2 md:flex-row"
                         variants={fadeIn('up', 0.5)}
@@ -25,7 +23,7 @@ export function Proyect() {
                         animate="show"
                         exit="hidden"
                     >
-<div className="lg:flex flex flex-col md:w-[50%] lg:justify-center mt-3 w-[90%] lg:items-center lg:flex-row gap-6">
+<div className="lg:flex flex flex-col justify-center items-center md:w-[50%] lg:justify-center mt-3 w-[90%] lg:items-center lg:flex-row gap-6">
   {proyectData.map(({ id, title, img, description, deploy, skills }) => (
     <div className="flex flex-col m-6 justify-center items-center w-full " key={id}>
       <div className="flex justify-center group cursor-pointer items-center relative">
