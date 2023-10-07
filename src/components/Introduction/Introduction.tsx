@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 export function Introduction() {
   return (
-    <div className="w-full  z-10">
-      <div className="w-full h-full">
-        <div className="container  flex flex-col mt-52 md:mt-0  md:flex-row items-center h-full px-5 mx-auto md:grid md:grid-cols-2 md:text-left">
+    <div className="w-full h-full  z-10">
+      <div className="  w-full h-full">
+        <div className="container  flex flex-col mt-20 lg:mt-56 justify-center  md:flex-row items-center h-full px-5 mx-auto md:grid md:grid-cols-2 md:text-left">
           <motion.div
             className="w-full  flex justify-center items-center md:w-auto md:h-auto mx-auto"
             variants={fadeIn("right", 0.5)}

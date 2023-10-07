@@ -11,11 +11,11 @@ export default function About() {
       initial="hidden"
       animate="show"
       exit="hidden"
-      className=" h-screen align-middle mt-0 px-6 md:mt-0 md:flex"
+      className=" h-full w-full  align-middle mt-0 px-6 md:mt-0 md:flex"
     >
-      <div className="flex flex-col m-0 md:flex-wrap w-full ">
-      <div className="text-white md:h-full mt-28 flex justify-center  items-center ml-11 flex-col  md:w-[25%]">
-        <h1 className="font-black text-center text-7xl mb-6">Sobre Mí</h1>
+      <div className="flex flex-col justify-center items-center m-0 md:flex-wrap w-full  ">
+      <div className="text-white md:h-full mt-20 lg:mt-28 sm:h-1/2 flex justify-center w-full  full items-center  flex-col  md:w-[25%]">
+        <h1 className="font-black text-center text-7xl  lg:mt-0 sm:mt-16 mb-6">Sobre Mí</h1>
         <p className="max-w-prose text-lg text-center text-white mb-4">
           Soy Jeremias Mingolla desarrollador Front-end con un amor por la
           creación de experiencias web interactivas. Mi objetivo es construir
@@ -32,24 +32,23 @@ export default function About() {
       <div className=" h-full flex mx-auto justify-center items-center w-[40%] ">
         <Image src="/remove.png" className="" alt="remove" width={600} height={600} />
       </div>
-      <div className="text-white h-full flex justify-center mr-12 items-center flex-col md:w-[20%]">
-        <h1 className="font-black text-center text-7xl mb-4 ">Skills</h1>
-        <div className="flex  justify-center items-center  flex-wrap gap-6">
-          <Image src="/node.png" width={50} height={50} alt="nodejs" />
-          <Image src="/css.png" width={50} height={50} alt="css" />
-          <Image src="/html.png" width={50} height={50} alt="html" />
-          <Image src="/react.png" width={50} height={50} alt="react" />
-          <Image src="/express.png" width={50} height={50} alt="express" />
-          <div className="flex justify-center items-center flew-wrap gap-6">
-          <Image src="/next.png" width={50} height={50} alt="nextjs" />
-            <Image src="/redux.png" width={50} height={50} alt="redux" />
-            <Image src="/post.png" width={50} height={50} alt="post" />
-            <Image src="/js.png" width={50} height={50} alt="js" />
-            <Image src="/tailwind.png" width={50} height={50} alt="tailwind" />
-            <Image src="/type.png" width={50} height={50} alt="TypeScript" />
-          </div>
-        </div>
-      </div>
+      <div className="text-white h-full flex justify-center items-center mr-11 flex-col md:w-[20%]">
+  <h1 className="lg:font-black text-center lg:text-7xl text-2xl mt-4 font-medium">Skills</h1>
+  <div className="flex flex-wrap gap-6 justify-center items-center">
+    <Image src="/node.png" width={40} height={40} alt="nodejs" />
+    <Image src="/css.png" width={40} height={40} alt="css" />
+    <Image src="/html.png" width={40} height={40} alt="html" />
+    <Image src="/react.png" width={40} height={40} alt="react" />
+    <Image src="/express.png" width={40} height={40} alt="express" />
+    <Image src="/next.png" width={40} height={40} alt="nextjs" />
+    <Image src="/redux.png" width={40} height={40} alt="redux" />
+    <Image src="/post.png" width={40} height={40} alt="post" />
+    <Image src="/js.png" width={40} height={40} alt="js" />
+    <Image src="/tailwind.png" width={40} height={40} alt="tailwind" />
+    <Image src="/type.png" width={40} height={40} alt="TypeScript" />
+  </div>
+</div>
+
       </div>
     </motion.div>
   );
