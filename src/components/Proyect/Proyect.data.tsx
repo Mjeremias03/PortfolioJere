@@ -99,8 +99,7 @@ export const proyectData = [
   {
     id: 2,
     title: "Portfolio",
-    description:
-   "",
+    description: "Este proyecto se centró en crear una interfaz intuitiva con una sólida experiencia de usuario. Utilicé Framer Motion para transiciones y otras tecnologías como Next.js, Tailwind CSS, CSS3 y TypeScript para el desarrollo. También, optimicé el rendimiento y la carga rápida en Vercel. El resultado es un portafolio interactivo y efectivo para mostrar mis proyectos y habilidades.",
       img: "Portfolio.png",
       deploy: [
         {

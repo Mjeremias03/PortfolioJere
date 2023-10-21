@@ -1,61 +1,61 @@
 "use client"
-import { fadeIn } from "@/utils/motionTransitions"
-import { motion } from 'framer-motion'
-import { proyectData } from "./Proyect.data"
+import { fadeIn } from "@/utils/motionTransitions";
+import { motion } from "framer-motion";
+import { proyectData } from "./Proyect.data";
+
 export function Proyect() {
-    
-    return (
-        <div className="min-h-screen flex w-full justify-center items-center ">
-            <div className="grid w-[80%] mx-auto items-center justify-center  pb-32 md:min-h-screen   mt-28 md:mt-0 place-items-center">
-                <div className="sm:mt-52 mt-20">
-                    <motion.h1
-                        variants={fadeIn('left', 0.5)}
-                        initial="hidden"
-                        animate="show"
-                        exit="hidden"
-                        className=" text-2xl font-bold text-center md:text-4-xl"
-                    >Mis últimos  <span className="font-bold text-blue-500">trabajos realizados.</span>
-                    </motion.h1>
-                    <motion.div
-                        className="flex flex-col justify-center items-center w-full h-full gap-5 px-2 md:flex-row"
-                        variants={fadeIn('up', 0.5)}
-                        initial="hidden"
-                        animate="show"
-                        exit="hidden"
-                    >
-<div className="lg:flex flex flex-col justify-center items-center md:w-[50%] lg:justify-center mt-3 w-[90%] lg:items-center lg:flex-row gap-6">
-  {proyectData.map(({ id, title, img, description, deploy, skills }) => (
-    <div className="flex flex-col m-6 justify-center items-center w-full " key={id}>
-      <div className="flex justify-center group cursor-pointer items-center relative">
-        <img src={img} alt={title} className="lg:w-full md:w-full w-96" />
-        <div className="absolute inset-0 flex justify-center items-center gap-3 mx-auto bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300">
-          {deploy.map(({ icon }, index) => (
-            <a key={index}  target="_blank" rel="noopener noreferrer">
-              {icon}
-            </a>
-          ))}
+  return (
+      <div className="grid  md:min-h-screen lg:mt-42 mt-28 md:mt-0 place-items-center ">
+        <div>
+        <motion.h1 
+        variants={fadeIn("left", 0.5)}
+        initial= "hidden" 
+        animate="show"
+        exit="hidden"
+        className="my-5 text-2xl text-center md:text-4xl font-extrabold ">Mis Ultimos <span className="text-sky-600 font-extrabold">Trabajos Realizados</span>
+      </motion.h1>
+      <motion.div
+  variants={fadeIn("left", 0.5)}
+  initial="hidden"
+  animate="show"
+  exit="hidden"
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[90%] mx-auto gap-4 justify-center"
+>
+{proyectData.map(({ id, title, description, deploy, img, skills }) => (
+  <div
+    className=" w-full  p-4 relative hover:shadow-lg transition-transform transform hover:scale-105"
+    key={id}
+  >
+    <div className="relative group">
+  <img src={img} alt={title} className="mt-4 w-full mx-auto" />
+  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
+    <div className="flex items-center">
+      {deploy.map((icon, index) => (
+        <div key={index} className="mx-2">
+          {icon.icon}
         </div>
-      </div>
-         <div className="w-96 h-64">
-      <h1 className="text-center font-black text-xl">{title}</h1>
-      <p className="text-center">{description}</p>
-      <h1 className="font-black text-center text-blue-500">Tecnologías implementadas:</h1>
-      <div className="text-center flex justify-center items-center flex-wrap gap-3">
-        {skills.map(({ icon }, index) => (
-          <div className="" key={index}>
-            {icon}
-          </div>
-        ))}
-      </div>
-          </div>   
+      ))}
     </div>
-  ))}
+  </div>
 </div>
+    <div className="flex flex-col mx-auto items-center justify-center">
+    <h2 className="text-xl font-bold text-white mb-2">{title}</h2>
+    <p className="text-white">{description}</p>
+    <div className="mt-4 flex  justify-center items-center">
+  <p className="text-white flex">
+   {skills.map((skill, index) => (
+      <span key={index} className="mr-2">
+        {skill.icon}
+      </span>
+    ))}
+  </p>
+</div>
+    </div>
+  </div>
+))}
+</motion.div>
 
-
- </motion.div>
-                </div>  
-            </div>
         </div>
-    )
+      </div>
+  );
 }

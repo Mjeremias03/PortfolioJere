@@ -6,7 +6,7 @@ export function Introduction() {
   return (
     <div className="w-full h-full  z-10">
       <div className="  w-full h-full">
-        <div className="container  flex flex-col mt-20 lg:mt-56 justify-center  md:flex-row items-center h-full px-5 mx-auto md:grid md:grid-cols-2 md:text-left">
+        <div className="container  flex flex-col mt-20 lg:mt-40 justify-center  md:flex-row items-center h-full px-5 mx-auto md:grid md:grid-cols-2 md:text-left">
           <motion.div
             className="w-full  flex justify-center items-center md:w-auto md:h-auto mx-auto"
             variants={fadeIn("right", 0.5)}
@@ -14,10 +14,10 @@ export function Introduction() {
             animate="show"
             exit="hidden"
           >
-            <div className="flex items-center justify-center md:w-full md:h-full w-[50%] h-[50%] ">
+            <div className="flex items-center justify-center h-full md:w-1/2 xl:h-full xl:w-full md:h-1/2  w-[50%]  ">
               <img
                 src="/JeremiasP.png"
-                className=" items-center md:h-full md:w-full"
+                className=" items-center  md:h-full md:w-full"
                 alt="Avatar"
               ></img>
             </div>
