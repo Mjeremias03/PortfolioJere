@@ -1,8 +1,8 @@
 "use client";
-import React from "react"; // Asegúrate de importar React
+import React from "react"; 
 import { fadeIn } from "@/utils/motionTransitions";
 import { motion } from "framer-motion";
-import Image from "next/image"; // Importa el componente Image de Next.js
+import Image from "next/image";
 
 export default function About() {
   return (

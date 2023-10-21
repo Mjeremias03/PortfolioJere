@@ -6,7 +6,7 @@ export function Proyect() {
     
     return (
         <div className="min-h-screen flex w-full justify-center items-center ">
-            <div className="grid w-full  pb-32 md:min-h-screen   mt-28 md:mt-0 place-items-center">
+            <div className="grid w-[80%] mx-auto items-center justify-center  pb-32 md:min-h-screen   mt-28 md:mt-0 place-items-center">
                 <div className="sm:mt-52 mt-20">
                     <motion.h1
                         variants={fadeIn('left', 0.5)}

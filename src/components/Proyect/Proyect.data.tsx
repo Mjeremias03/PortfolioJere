@@ -1,4 +1,4 @@
-import { SiTailwindcss, SiGithub, SiReact,SiVercel, SiNextdotjs, SiTestinglibrary,SiRedux,SiNodedotjs,SiExpress,SiCss3,SiTypescript,SiPostgresql } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiReact,SiVercel, SiNextdotjs,SiSequelize, SiTestinglibrary,SiRedux,SiNodedotjs,SiExpress,SiCss3,SiTypescript,SiPostgresql } from "react-icons/si";
 
 export const proyectData = [
   {
@@ -41,6 +41,9 @@ export const proyectData = [
       },
       {
         icon: <SiPostgresql size="40" />
+      },
+      {
+        icon: <SiSequelize size="40"/> 
       },
     ]
   },
@@ -88,6 +91,9 @@ export const proyectData = [
       {
         icon: <SiPostgresql size="40" />
       },
+      {
+        icon: <SiSequelize size="40"/> 
+      },
     ]
   },
   {
@@ -124,6 +130,52 @@ export const proyectData = [
       },
       {
         icon: <SiTypescript size="40" />
+      },
+    ]
+  },
+  {
+    id: 6,
+    title: "Techno Premium",
+    description:
+     "Construí una plataforma impresionante con una sólida base de datos PostgreSQL y un backend eficiente utilizando Node.js, Express y Sequelize. En el frontend, diseñé una interfaz moderna con React que ofrece una experiencia de usuario excepcional. ¡Estoy emocionado de seguir creando soluciones tecnológicas de alta calidad!",
+    img: "/techno.png",
+    deploy: [
+      {
+        icon: (
+          <a href="https://github.com/Mjeremias03/techno-premium" target="_blank" rel="noopener noreferrer">
+            <SiGithub size="40" />
+          </a>
+        )
+      },
+      {
+        icon: (
+          <a href="https://techno-premium.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <SiVercel size="40" />
+          </a>
+        )
+      },
+    ],
+    skills: [
+      {
+        icon: <SiReact size="40" />
+      },
+      {
+        icon: <SiCss3 size="40" />
+      },
+      {
+        icon: <SiExpress size="40" />
+      },
+      {
+        icon: <SiNodedotjs size="40" />
+      },
+      {
+        icon: <SiRedux size="40" />
+      },
+      {
+        icon: <SiPostgresql size="40" />
+      },
+      {
+        icon: <SiSequelize size="40"/> 
       },
     ]
   },
